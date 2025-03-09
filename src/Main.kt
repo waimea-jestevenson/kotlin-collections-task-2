@@ -121,10 +121,10 @@ fun setupCages(): MutableList<String> {
  */
 fun placeMonkeyInCage(cageList: MutableList<String>, cageNum: Int, name: String) {
     println("+++ Putting $name into cage $cageNum")
-    cageList.add(0, name)
+    cageList.add("$cageNum", "$name")
     println(cageList)
 
-      // REPLACE THIS WITH YOUR CODE!
+
 }
 
 
@@ -148,7 +148,7 @@ fun listAllCages(cageList: List<String>) {
     for ((i, name) in cageList.withIndex()) {
         println("cageList$i: $name")
     }
-        // REPLACE THIS WITH YOUR CODE!
+
 }
 
 
@@ -179,7 +179,7 @@ fun listAllMonkeys(cageList: List<String>) {
  * - Etc.
  */
 fun listEmptyCages(cageList: List<String>) {
-    println("EMPTY CAGES")
+    println("")
 
        // REPLACE THIS WITH YOUR CODE!
 }
@@ -198,7 +198,7 @@ fun listEmptyCages(cageList: List<String>) {
  * Tip: the String.padEnd(N) function will help you here
  */
 fun listAllMonkeysAndCages(cageList: List<String>) {
-    println("MONKEYS & CAGES")
+    println("")
 
        // REPLACE THIS WITH YOUR CODE!
 }
