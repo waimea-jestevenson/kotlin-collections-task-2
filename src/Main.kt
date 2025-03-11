@@ -121,7 +121,7 @@ fun setupCages(): MutableList<String> {
  */
 fun placeMonkeyInCage(cageList: MutableList<String>, cageNum: Int, name: String) {
     println("+++ Putting $name into cage $cageNum")
-    cageList.add("$cageNum", "$name")
+    cageList[cageNum - 1] = name
     println(cageList)
 
 
@@ -140,13 +140,11 @@ fun placeMonkeyInCage(cageList: MutableList<String>, cageNum: Int, name: String)
  */
 
 /**Put this in here
- *   // Loop getting index and values
- *     for ((i, snack) in snacks.withIndex()) {
- *         println("$i: $snack")
  */
+
 fun listAllCages(cageList: List<String>) {
     for ((i, name) in cageList.withIndex()) {
-        println("cageList$i: $name")
+        println("- cage ${i+1}: $name")
     }
 
 }
@@ -163,7 +161,9 @@ fun listAllCages(cageList: List<String>) {
  */
 fun listAllMonkeys(cageList: List<String>) {
     for (name in cageList) {
-        println(name)
+    if (name != EMPTY) {
+        println(cageList)
+    }
     }
 
 
@@ -179,9 +179,8 @@ fun listAllMonkeys(cageList: List<String>) {
  * - Etc.
  */
 fun listEmptyCages(cageList: List<String>) {
-    println("")
 
-       // REPLACE THIS WITH YOUR CODE!
+
 }
 
 
