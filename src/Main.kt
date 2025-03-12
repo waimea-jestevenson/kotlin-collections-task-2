@@ -162,7 +162,7 @@ fun listAllCages(cageList: List<String>) {
 fun listAllMonkeys(cageList: List<String>) {
     for (name in cageList) {
     if (name != EMPTY) {
-        println(cageList)
+        println("- $name")
     }
     }
 
@@ -179,7 +179,11 @@ fun listAllMonkeys(cageList: List<String>) {
  * - Etc.
  */
 fun listEmptyCages(cageList: List<String>) {
-
+for (name in cageList) {
+    if (name == EMPTY) {
+        println(EMPTY)
+    }
+}
 
 }
 
