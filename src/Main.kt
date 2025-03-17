@@ -181,7 +181,7 @@ fun listAllMonkeys(cageList: List<String>) {
 fun listEmptyCages(cageList: List<String>) {
 for (name in cageList) {
     if (name == EMPTY) {
-        println()
+        println("- $")
     }
 }
 
@@ -221,7 +221,7 @@ fun monkeyCount(cageList: List<String>): Int {
  */
 /*   println("Empty cages: ${ cageList.indexOf(EMPTY)}")*/
 fun emptyCount(cageList: List<String>): Int {
-    for(){
+
     return cageList.indexOf(EMPTY)
 }
 
@@ -263,7 +263,7 @@ fun swapCages(cageList: MutableList<String>, cageNum1: Int, cageNum2: Int) {
     println("<-> Swapping cages $cageNum1 and $cageNum2")
 return 
        // REPLACE THIS WITH YOUR CODE!
-}}
+}
 
 
 
